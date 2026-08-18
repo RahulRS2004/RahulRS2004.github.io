@@ -70,7 +70,7 @@
       pointer-events: auto;
     }
 
-    /* Modal Zoom Smooth Transformation */
+    /* Modal Zoom Transformation */
     #modalImg {
       transform-origin: center center;
       transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
@@ -113,7 +113,6 @@
         <span class="w-2 h-2 rounded-full bg-[#00f0ff] animate-ping"></span> ECE Fresher | Embedded Systems, IoT, Robotics, Industrial Automation, Semiconductors
       </div>
       
-      <!-- Unified Single-Line Pro Engineering Title -->
       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-[#00f0ff] neon-text leading-tight sm:leading-snug py-2 break-words">
         Rahul Raghunatha Shettigar
       </h1>
@@ -150,7 +149,7 @@
           ECE fresher with foundational knowledge in Embedded Systems, IoT, and Semiconductor design concepts. Active Student Member of the IEEE through December 2026, demonstrating continuous commitment to professional growth.
         </p>
         <p class="text-slate-400 text-sm leading-relaxed">
-          Demonstrated practical project execution through the KSCST-funded MITRA Gesture Glove assistive device, autonomous ROS 2-integrated mobile service robotics, and hands-on analysis of automated thermal power processing systems.
+          Demonstrated practical project execution through the KSCST-funded and ICHTR 2025 conference-presented MITRA Gesture Glove assistive device, autonomous ROS 2-integrated mobile service robotics, and hands-on analysis of automated thermal power processing systems.
         </p>
       </div>
       <div class="glass-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
@@ -310,52 +309,121 @@
     </div>
   </section>
 
-  <!-- 04 // Engineering Projects -->
+  <!-- 04 // Engineering Projects (All 3 Projects) -->
   <section id="projects" class="py-12 px-6 max-w-7xl mx-auto">
     <div class="flex items-center gap-4 mb-8">
       <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-widest">FEATURED PROJECTS</span>
       <div class="h-px bg-slate-800 flex-1"></div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- Project 1: MITRA Gesture Glove -->
       <div class="glass-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
         <div class="space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">Embedded / IoT / Assistive Tech</span>
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">Embedded • TinyML • Assistive Tech</span>
             <span class="text-xs font-mono text-slate-400">May 2025 – Dec 2025</span>
           </div>
-          <h3 class="text-xl font-bold text-white">MITRA: Assistive Gesture Glove for Indian Sign Language Interpretation</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Designed a sensor-based embedded system using flex sensors and ESP32 for real-time signal acquisition and processing. Implemented wireless data transmission and human–machine interface via an Android application. Selected for state-level KSCST project funding and exhibition.
+          
+          <h3 class="text-lg font-bold text-white tracking-tight">MITRA: Smart Gesture Glove for ISL Interpretation</h3>
+          
+          <p class="text-xs text-slate-400 font-mono">
+            Presented at <span class="text-[#00f0ff]">ICHTR 2025 (MAHE)</span> & funded by <span class="text-[#00f0ff]">49th KSCST SPP</span>.
           </p>
+
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pt-2 border-t border-white/5">
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Controller & Sensors:</strong> Built with <strong>ESP32 WROOM-DA</strong>, integrating 5 multi-channel ADC flex sensors and an <strong>MPU6500 6-DOF IMU</strong> over I²C.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Machine Learning & HMI:</strong> Deployed TFLite gesture classification streaming real-time ISL translations via Bluetooth to the <strong>MITRA mobile application</strong> for text/speech output.</span>
+            </li>
+          </ul>
         </div>
-        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2">
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">ESP32</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">Flex Sensors</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">ADC Interfacing</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">Wireless HMI</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">KSCST Funded</span>
+
+        <div class="pt-4 border-t border-white/5 space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">ESP32</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">Embedded C</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">MPU6500</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">Bluetooth</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">TensorFlow</span>
+          </div>
         </div>
       </div>
 
-      <!-- Project 2: RFID-based Smart Attendance System -->
+      <!-- Project 2: Autonomous IoT Service Robot -->
+      <div class="glass-card p-6 rounded-xl space-y-4 flex flex-col justify-between border-[#00f0ff]/30">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">Robotics • ROS 2 • IoT Automation</span>
+            <span class="text-xs font-mono text-slate-400">Feb 2026 – May 2026</span>
+          </div>
+          
+          <h3 class="text-lg font-bold text-white tracking-tight">Autonomous IoT Service Robot</h3>
+          
+          <p class="text-xs text-slate-400 font-mono">
+            Developed during <span class="text-[#00f0ff]">iSpark Learning Solutions Internship</span>.
+          </p>
+
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pt-2 border-t border-white/5">
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Autonomous Navigation:</strong> Implemented ROS 2 decision-making loops for obstacle avoidance, target following, and path navigation using ultrasonic distance telemetry.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Wireless IoT Control:</strong> Integrated ESP8266 Wi-Fi microcontroller with an L298N dual H-bridge motor driver for real-time remote commands and telemetry feedback.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-white/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">ROS 2</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">ESP8266</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">L298N</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">Sensors</span>
+            </div>
+            <a href="https://github.com/RahulRS2004/Autonomous-IoT-Service-Robot" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-[#00f0ff] hover:underline flex items-center gap-1">
+              <i data-lucide="github" class="w-3.5 h-3.5"></i> Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: RFID-based Smart Attendance System -->
       <div class="glass-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
         <div class="space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">IoT / Automation / Logging</span>
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">IoT • Automation • Data Logging</span>
             <span class="text-xs font-mono text-slate-400">Sept 2024 – Feb 2025</span>
           </div>
-          <h3 class="text-xl font-bold text-white">RFID-based Smart Attendance System</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Developed an automated RFID-based monitoring system using ESP8266 for real-time data acquisition. Implemented reliable data logging to improve tracking efficiency and system automation.
-          </p>
+          
+          <h3 class="text-lg font-bold text-white tracking-tight">RFID-based Smart Attendance System</h3>
+
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pt-2 border-t border-white/5">
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Contactless Acquisition:</strong> Integrated RC522 RFID reader module with ESP8266 microcontrollers for instantaneous high-frequency tag verification.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#00f0ff] mt-1 font-mono text-xs">▸</span>
+              <span><strong>Cloud Telemetry:</strong> Engineered automated wireless data synchronization and logging to eliminate proxy attendance and manual clerical overhead.</span>
+            </li>
+          </ul>
         </div>
-        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2">
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">ESP8266</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">RFID Module</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">Embedded C</span>
-          <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded border border-white/5">Automated Logging</span>
+
+        <div class="pt-4 border-t border-white/5 space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">ESP8266</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">RC522 RFID</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">SPI Protocol</span>
+            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-200 rounded border border-white/5">Embedded C</span>
+          </div>
         </div>
       </div>
 
@@ -366,21 +434,26 @@
       <div class="flex items-center gap-2 text-white font-mono text-sm font-semibold border-b border-white/5 pb-3">
         <i data-lucide="trophy" class="w-4 h-4 text-[#00f0ff]"></i> Key Honors & Awards
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-300">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-slate-300">
+        <div class="bg-slate-800/40 p-4 rounded-lg border border-white/5 space-y-1">
+          <span class="text-xs font-mono text-[#00f0ff] block">Poster Presentation (Nov 2025)</span>
+          <p class="font-semibold text-white">ICHTR 2025 Manipal</p>
+          <p class="text-xs text-slate-400">Presented research on AI gesture glove for sign language interpretation at MAHE, Manipal.</p>
+        </div>
         <div class="bg-slate-800/40 p-4 rounded-lg border border-white/5 space-y-1">
           <span class="text-xs font-mono text-[#00f0ff] block">State-Level Selection (July 2026)</span>
           <p class="font-semibold text-white">KSCST Project Exhibition</p>
-          <p class="text-xs text-slate-400">Selected for state-level exhibition & funding for the MITRA Gesture Glove project under 49th SPP series.</p>
+          <p class="text-xs text-slate-400">Selected for state exhibition & funding for MITRA Gesture Glove under 49th SPP series.</p>
         </div>
         <div class="bg-slate-800/40 p-4 rounded-lg border border-white/5 space-y-1">
           <span class="text-xs font-mono text-[#00f0ff] block">First Prize (2025)</span>
           <p class="font-semibold text-white">Electro-Detectives</p>
-          <p class="text-xs text-slate-400">Won 1st prize in the inter-collegiate hardware debugging and circuit troubleshooting competition at Varnothsava.</p>
+          <p class="text-xs text-slate-400">Won 1st prize in state-level hardware debugging & circuit troubleshooting at Varnothsava.</p>
         </div>
         <div class="bg-slate-800/40 p-4 rounded-lg border border-white/5 space-y-1">
           <span class="text-xs font-mono text-[#00f0ff] block">Third Place (May 2026)</span>
           <p class="font-semibold text-white">NHRC Group Research</p>
-          <p class="text-xs text-slate-400">Awarded 3rd place in National Human Rights Commission research competition on digital privacy challenges.</p>
+          <p class="text-xs text-slate-400">Awarded 3rd place in NHRC national research competition on digital privacy challenges.</p>
         </div>
       </div>
     </div>
@@ -442,7 +515,7 @@
     </div>
   </section>
 
-  <!-- 06 // VERIFIED CERTIFICATIONS (3D Coverflow Perspective Carousel with 3-Second Auto-Loop) -->
+  <!-- 06 // VERIFIED CERTIFICATIONS (3D Coverflow Perspective Carousel - 17 Verified Credentials) -->
   <section id="certifications" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto overflow-hidden">
     <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
       <div>
@@ -450,13 +523,11 @@
           <span class="text-xs font-mono text-[#00f0ff] uppercase tracking-widest">VERIFIED CERTIFICATIONS</span>
           <div class="h-px bg-slate-800 w-24"></div>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Interactive 3D Credential Showcase</h2>
-        <p class="text-slate-400 text-xs font-mono mt-1">Rotates every 3 seconds. Hover over the cards to pause, or click any card to inspect and zoom full details.</p>
       </div>
 
       <!-- 3D Carousel Top Controls -->
       <div class="flex items-center gap-3">
-        <span id="slideCounter" class="text-xs font-mono text-[#00f0ff] bg-slate-900/90 border border-white/10 px-3 py-1.5 rounded-lg">01 / 16</span>
+        <span id="slideCounter" class="text-xs font-mono text-[#00f0ff] bg-slate-900/90 border border-white/10 px-3 py-1.5 rounded-lg">01 / 17</span>
         <button id="prevBtn" class="p-2.5 rounded-lg glass-card hover:border-[#00f0ff] text-white hover:text-[#00f0ff] transition-all" aria-label="Previous Certificate">
           <i data-lucide="chevron-left" class="w-5 h-5"></i>
         </button>
@@ -479,7 +550,7 @@
         <i data-lucide="chevron-right" class="w-6 h-6"></i>
       </button>
 
-      <!-- ALL 16 CERTIFICATE 3D CARDS -->
+      <!-- ALL 17 CERTIFICATE 3D CARDS -->
       
       <!-- CARD 01: iSpark Learning Solutions Internship -->
       <div data-index="0" onclick="cardClicked(0, 'https://lh3.googleusercontent.com/d/1oYA3PsexNLL8wYNvJn8ZI0sn5ieMg72y', 'Robotics & Autonomous ROS 2 (iSpark Learning Solutions)', 'Completed practical internship on ROS 2, mobile service robotics, obstacle avoidance, and IoT control.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-[#00f0ff]/40 bg-[#0b1329] shadow-2xl cursor-pointer">
@@ -557,15 +628,34 @@
         </div>
       </div>
 
-      <!-- CARD 05: KSCST State-Level Project Exhibition & Funding (MITRA) -->
-      <div data-index="4" onclick="cardClicked(4, 'https://lh3.googleusercontent.com/d/1n6VJ4bSM9CVJW2q1yO4dDc4FlXQbZrMP', 'KSCST 49th SPP State Exhibition & Funding', 'Selected for State-Level Exhibition & Funding for MITRA Assistive Glove project by KSCST, DST & ART-Park IISc (July 2026).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 05: ICHTR 2025 Poster Presentation (MAHE Manipal) -->
+      <div data-index="4" onclick="cardClicked(4, 'https://lh3.googleusercontent.com/d/10WQbnTaYi2Nsj78ChFXTvMWfZ4jwcarp', 'ICHTR 2025 Poster Presentation (MAHE Manipal)', 'Presented research poster on Bluetooth based AI gesture glove for sign language interpretation at the Interdisciplinary Conference on Healthcare and Technical Research, MAHE Manipal (Nov 2025).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-[#00f0ff]/40 bg-[#0b1329] shadow-2xl cursor-pointer">
+        <div class="space-y-3">
+          <div class="relative overflow-hidden rounded-xl border border-[#00f0ff]/20 bg-slate-950">
+            <img src="https://lh3.googleusercontent.com/d/10WQbnTaYi2Nsj78ChFXTvMWfZ4jwcarp" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="ICHTR 2025 Research Poster Presentation Certificate MAHE Manipal" loading="lazy" ondragstart="return false;">
+            <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">RESEARCH POSTER</div>
+          </div>
+          <div>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 05 // Research Conference</span>
+            <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">AI Gesture Glove Poster Presentation</h4>
+            <p class="text-xs text-slate-300 mt-1 line-clamp-2">Presented research on 'Bluetooth based AI gesture glove for sign language interpretation' at ICHTR 2025, MAHE Manipal.</p>
+          </div>
+        </div>
+        <div class="pt-3 mt-3 border-t border-[#00f0ff]/20 flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-300">MAHE, Manipal</span>
+          <span class="text-[#00f0ff] font-semibold flex items-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Inspect</span>
+        </div>
+      </div>
+
+      <!-- CARD 06: KSCST State-Level Project Exhibition & Funding (MITRA) -->
+      <div data-index="5" onclick="cardClicked(5, 'https://lh3.googleusercontent.com/d/1n6VJ4bSM9CVJW2q1yO4dDc4FlXQbZrMP', 'KSCST 49th SPP State Exhibition & Funding', 'Selected for State-Level Exhibition & Funding for MITRA Assistive Glove project by KSCST, DST & ART-Park IISc (July 2026).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1n6VJ4bSM9CVJW2q1yO4dDc4FlXQbZrMP" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="KSCST SPP 49th Series State Exhibition Certificate MITRA" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">STATE GRANT</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 05 // State Project Grant</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 06 // State Project Grant</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">KSCST 49th SPP State Exhibition</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Selected for State-Level Exhibition & Funding for MITRA Assistive Glove project by KSCST, DST & ART-Park IISc (July 2026).</p>
           </div>
@@ -576,15 +666,15 @@
         </div>
       </div>
 
-      <!-- CARD 06: IEEE Student Membership -->
-      <div data-index="5" onclick="cardClicked(5, 'https://lh3.googleusercontent.com/d/10tgTUqq-eue-9u5da2v3pr8VLfJwITse', 'IEEE Student Membership 2026', 'Student Member in good standing through Dec 2026 for personal & professional commitment to advancing technology.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 07: IEEE Student Membership -->
+      <div data-index="6" onclick="cardClicked(6, 'https://lh3.googleusercontent.com/d/10tgTUqq-eue-9u5da2v3pr8VLfJwITse', 'IEEE Student Membership 2026', 'Student Member in good standing through Dec 2026 for personal & professional commitment to advancing technology.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/10tgTUqq-eue-9u5da2v3pr8VLfJwITse" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="IEEE Certificate of Student Membership 2026" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">ACTIVE 2026</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 06 // Professional Body</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 07 // Professional Body</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">IEEE Student Membership</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Student Member in good standing through Dec 2026 for personal & professional commitment to advancing technology.</p>
           </div>
@@ -595,15 +685,15 @@
         </div>
       </div>
 
-      <!-- CARD 07: Electro-Detectives (1st Prize) -->
-      <div data-index="6" onclick="cardClicked(6, 'https://lh3.googleusercontent.com/d/1NFtQPhbHTkp4L06vto0EKxwhCuAkO6eu', 'Electro-Detectives 1st Prize', 'Secured 1st place in state-level circuit debugging and troubleshooting at Varnothsava 2025.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 08: Electro-Detectives (1st Prize) -->
+      <div data-index="7" onclick="cardClicked(7, 'https://lh3.googleusercontent.com/d/1NFtQPhbHTkp4L06vto0EKxwhCuAkO6eu', 'Electro-Detectives 1st Prize', 'Secured 1st place in state-level circuit debugging and troubleshooting at Varnothsava 2025.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1NFtQPhbHTkp4L06vto0EKxwhCuAkO6eu" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Electro-Detectives First Prize Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-emerald-400 border border-emerald-400/30">1ST PRIZE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 07 // Hardware Debugging</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 08 // Hardware Debugging</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Electro-Detectives (1st Place)</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Secured 1st place in state-level circuit debugging and troubleshooting at Varnothsava 2025.</p>
           </div>
@@ -614,15 +704,15 @@
         </div>
       </div>
 
-      <!-- CARD 08: PCB Design Using Open Source Tools -->
-      <div data-index="7" onclick="cardClicked(7, 'https://lh3.googleusercontent.com/d/1W2bP81FwJWjzoptgv81CtDesY2DHOKP0', 'PCB Design Open Source Tools Workshop', 'Hands-on workshop organized by ECE Dept in association with IEEE Student Branch & ISTE (Jan 2024).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 09: PCB Design Using Open Source Tools -->
+      <div data-index="8" onclick="cardClicked(8, 'https://lh3.googleusercontent.com/d/1W2bP81FwJWjzoptgv81CtDesY2DHOKP0', 'PCB Design Open Source Tools Workshop', 'Hands-on workshop organized by ECE Dept in association with IEEE Student Branch & ISTE (Jan 2024).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1W2bP81FwJWjzoptgv81CtDesY2DHOKP0" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="PCB Design Open Source Tools Workshop Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">WORKSHOP</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 08 // EDA & Hardware</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 09 // EDA & Hardware</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">PCB Design Open Source Tools</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Hands-on workshop organized by ECE Dept in association with IEEE Student Branch & ISTE (Jan 2024).</p>
           </div>
@@ -633,15 +723,15 @@
         </div>
       </div>
 
-      <!-- CARD 09: TCS TechBytes Engineering IT Quiz -->
-      <div data-index="8" onclick="cardClicked(8, 'https://lh3.googleusercontent.com/d/10geoI5Re2fA8OGQezZt4vytBOOtUIVeI', 'TCS TechBytes Engineering IT Quiz 2025', 'Statewide inter-college quiz organized by Tata Consultancy Services & BITES Govt of Karnataka.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 10: TCS TechBytes Engineering IT Quiz -->
+      <div data-index="9" onclick="cardClicked(9, 'https://lh3.googleusercontent.com/d/10geoI5Re2fA8OGQezZt4vytBOOtUIVeI', 'TCS TechBytes Engineering IT Quiz 2025', 'Statewide inter-college quiz organized by Tata Consultancy Services & BITES Govt of Karnataka.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/10geoI5Re2fA8OGQezZt4vytBOOtUIVeI" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="TCS TechBytes IT Quiz Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">STATE LEVEL</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 09 // Statewide Quiz</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 10 // Statewide Quiz</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">TCS TechBytes IT Quiz 2025</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Statewide inter-college quiz organized by Tata Consultancy Services & BITES Govt of Karnataka.</p>
           </div>
@@ -652,15 +742,15 @@
         </div>
       </div>
 
-      <!-- CARD 10: 30-Hour Course on Indoor Farming & Technology -->
-      <div data-index="9" onclick="cardClicked(9, 'https://lh3.googleusercontent.com/d/17y74npecdbxQzkTcSLM4JSRlRhcy6oL0', 'Indoor Farming & Technology (30 Hours)', 'Completed 30-hour course on smart greenhouse automation & sensor monitoring by ECE Dept (Aug–Dec 2025).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 11: 30-Hour Course on Indoor Farming & Technology -->
+      <div data-index="10" onclick="cardClicked(10, 'https://lh3.googleusercontent.com/d/17y74npecdbxQzkTcSLM4JSRlRhcy6oL0', 'Indoor Farming & Technology (30 Hours)', 'Completed 30-hour course on smart greenhouse automation & sensor monitoring by ECE Dept (Aug–Dec 2025).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/17y74npecdbxQzkTcSLM4JSRlRhcy6oL0" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Indoor Farming and Technology Course Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">30 HOURS</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 10 // Value Added Course</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 11 // Value Added Course</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Indoor Farming & Technology</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Completed 30-hour course on smart greenhouse automation & sensor monitoring by ECE Dept (Aug–Dec 2025).</p>
           </div>
@@ -671,15 +761,15 @@
         </div>
       </div>
 
-      <!-- CARD 11: Varnothsava 2025 State-Level Fest -->
-      <div data-index="10" onclick="cardClicked(10, 'https://lh3.googleusercontent.com/d/1siWgkBSb3-R5RRcIh2BibhRfDY74z_Q3', 'Varnothsava 2025 State-Level Fest', 'Participated in state-level technical exhibitions and events held on 20 & 21 March 2025 at SMVITM.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 12: Varnothsava 2025 State-Level Fest -->
+      <div data-index="11" onclick="cardClicked(11, 'https://lh3.googleusercontent.com/d/1siWgkBSb3-R5RRcIh2BibhRfDY74z_Q3', 'Varnothsava 2025 State-Level Fest', 'Participated in state-level technical exhibitions and events held on 20 & 21 March 2025 at SMVITM.')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1siWgkBSb3-R5RRcIh2BibhRfDY74z_Q3" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Varnothsava Participation Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">SYMPOSIUM</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 11 // Techno-Cultural Fest</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 12 // Techno-Cultural Fest</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Varnothsava 2025 State Fest</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">Participated in state-level technical exhibitions and events held on 20 & 21 March 2025 at SMVITM.</p>
           </div>
@@ -690,15 +780,15 @@
         </div>
       </div>
 
-      <!-- CARD 12: Build, Sense, Analyse: IoT & Data Science (DLithe & SMVITM) -->
-      <div data-index="11" onclick="cardClicked(11, 'https://lh3.googleusercontent.com/d/1vSc2pYCX-pmm4PE9Ws4AC5H07Tg1jLM4', 'Build, Sense, Analyse: IoT & Data Science', '3-day hands-on workshop on IoT prototyping and Data Science with DLithe Consultancy & ISTE (Apr 2025).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 13: Build, Sense, Analyse: IoT & Data Science (DLithe & SMVITM) -->
+      <div data-index="12" onclick="cardClicked(12, 'https://lh3.googleusercontent.com/d/1vSc2pYCX-pmm4PE9Ws4AC5H07Tg1jLM4', 'Build, Sense, Analyse: IoT & Data Science', '3-day hands-on workshop on IoT prototyping and Data Science with DLithe Consultancy & ISTE (Apr 2025).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-white/10 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1vSc2pYCX-pmm4PE9Ws4AC5H07Tg1jLM4" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="DLithe IoT and Data Science Workshop Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">IOT & DATA</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 12 // IoT & Data Workshop</span>
+            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 13 // IoT & Data Workshop</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Build, Sense, Analyse: IoT & Data</h4>
             <p class="text-xs text-slate-400 mt-1 line-clamp-2">3-day hands-on workshop on IoT prototyping and Data Science with DLithe Consultancy & ISTE (Apr 2025).</p>
           </div>
@@ -709,15 +799,15 @@
         </div>
       </div>
 
-      <!-- CARD 13: 1st Place Taluk Level Football -->
-      <div data-index="12" onclick="cardClicked(12, 'https://lh3.googleusercontent.com/d/1fgbpHncWgcPDUVltmTOvYd9KkQckm0gV', 'Taluk Level Football (1st Place)', 'Secured 1st Place in Taluk-level football tournament representing St. Francis School (Aug 2019).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-emerald-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 14: 1st Place Taluk Level Football -->
+      <div data-index="13" onclick="cardClicked(13, 'https://lh3.googleusercontent.com/d/1fgbpHncWgcPDUVltmTOvYd9KkQckm0gV', 'Taluk Level Football (1st Place)', 'Secured 1st Place in Taluk-level football tournament representing St. Francis School (Aug 2019).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-emerald-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-emerald-500/20 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1fgbpHncWgcPDUVltmTOvYd9KkQckm0gV" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Taluk Level Football 1st Place Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-emerald-400 border border-emerald-400/30">1ST PLACE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Cert 13 // Athletic Honor</span>
+            <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Cert 14 // Athletic Honor</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Taluk Level Football (1st Place)</h4>
             <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 1st Place in Taluk-level football tournament representing St. Francis School (Aug 2019).</p>
           </div>
@@ -728,15 +818,15 @@
         </div>
       </div>
 
-      <!-- CARD 14: 2nd Place District Level Football -->
-      <div data-index="13" onclick="cardClicked(13, 'https://lh3.googleusercontent.com/d/1PfMXTMkkYXmSG2-h14p64UL0UW9m1yob', 'District Level Football (2nd Place)', 'Secured 2nd Place in Udupi District-level U-17 football tournament held at Manipal (Aug 2019).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-sky-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 15: 2nd Place District Level Football -->
+      <div data-index="14" onclick="cardClicked(14, 'https://lh3.googleusercontent.com/d/1PfMXTMkkYXmSG2-h14p64UL0UW9m1yob', 'District Level Football (2nd Place)', 'Secured 2nd Place in Udupi District-level U-17 football tournament held at Manipal (Aug 2019).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-sky-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-sky-500/20 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1PfMXTMkkYXmSG2-h14p64UL0UW9m1yob" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="District Level Football 2nd Place Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-sky-400 border border-sky-400/30">2ND PLACE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-sky-400 uppercase tracking-wider">Cert 14 // Athletic Honor</span>
+            <span class="text-[10px] font-mono text-sky-400 uppercase tracking-wider">Cert 15 // Athletic Honor</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">District Level Football (2nd Place)</h4>
             <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 2nd Place in Udupi District-level U-17 football tournament held at Manipal (Aug 2019).</p>
           </div>
@@ -747,15 +837,15 @@
         </div>
       </div>
 
-      <!-- CARD 15: 3rd Place College Javelin Throw -->
-      <div data-index="14" onclick="cardClicked(14, 'https://lh3.googleusercontent.com/d/1f5xmKbYwp1PlgcjWnffNWfV_LYEwgHSJ', 'Javelin Throw 3rd Place (Annual Sports Day)', 'Secured 3rd Place in Javelin Throw representing E&C Engineering Branch at SMVITM Sports Day (2022-23).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-teal-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 16: 3rd Place College Javelin Throw -->
+      <div data-index="15" onclick="cardClicked(15, 'https://lh3.googleusercontent.com/d/1f5xmKbYwp1PlgcjWnffNWfV_LYEwgHSJ', 'Javelin Throw 3rd Place (Annual Sports Day)', 'Secured 3rd Place in Javelin Throw representing E&C Engineering Branch at SMVITM Sports Day (2022-23).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-teal-500/30 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-teal-500/20 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1f5xmKbYwp1PlgcjWnffNWfV_LYEwgHSJ" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="College Annual Sports Day Javelin Throw Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-teal-400 border border-teal-400/30">3RD PLACE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-teal-400 uppercase tracking-wider">Cert 15 // Athletic Honor</span>
+            <span class="text-[10px] font-mono text-teal-400 uppercase tracking-wider">Cert 16 // Athletic Honor</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Javelin Throw (3rd Place)</h4>
             <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 3rd Place in Javelin Throw representing E&C Engineering Branch at SMVITM Sports Day (2022-23).</p>
           </div>
@@ -766,15 +856,15 @@
         </div>
       </div>
 
-      <!-- CARD 16: 1st Place Taluk Level Kabaddi -->
-      <div data-index="15" onclick="cardClicked(15, 'https://lh3.googleusercontent.com/d/1sJB7fO7P-KwbLN9ueF359eyS2grr3OzA', 'Taluk Level Kabaddi (1st Place)', 'Secured 1st Place in Taluk-level Kabaddi tournament representing St. Francis School at Padubidri (Aug 2016).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-emerald-500/40 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 17: 1st Place Taluk Level Kabaddi -->
+      <div data-index="16" onclick="cardClicked(16, 'https://lh3.googleusercontent.com/d/1sJB7fO7P-KwbLN9ueF359eyS2grr3OzA', 'Taluk Level Kabaddi (1st Place)', 'Secured 1st Place in Taluk-level Kabaddi tournament representing St. Francis School at Padubidri (Aug 2016).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-emerald-500/40 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
           <div class="relative overflow-hidden rounded-xl border border-emerald-500/20 bg-slate-950">
             <img src="https://lh3.googleusercontent.com/d/1sJB7fO7P-KwbLN9ueF359eyS2grr3OzA" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Taluk Level Kabaddi 1st Place Certificate" loading="lazy" ondragstart="return false;">
             <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-emerald-400 border border-emerald-400/30">1ST PLACE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Cert 16 // Athletic Honor</span>
+            <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Cert 17 // Athletic Honor</span>
             <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Taluk Level Kabaddi (1st Place)</h4>
             <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 1st Place in Taluk-level Kabaddi competition representing St. Francis School at Padubidri (Aug 2016).</p>
           </div>
@@ -881,7 +971,7 @@
     // Initialize Lucide Icons
     lucide.createIcons();
 
-    // 3D Coverflow Carousel Engine
+    // 3D Coverflow Carousel Engine (17 Unique Cards)
     let currentIndex = 0;
     const items = document.querySelectorAll('.carousel-3d-item');
     const totalItems = items.length;
