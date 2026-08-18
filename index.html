@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul Raghunatha Shettigar | Embedded Systems, Semiconductors, IoT & Hardware Engineering</title>
+  <title>Rahul Raghunatha Shettigar | Embedded Systems, Semiconductors, Robotics, IoT & Hardware Engineering</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -69,6 +69,13 @@
       -webkit-user-drag: none;
       pointer-events: auto;
     }
+
+    /* Modal Zoom Smooth Transformation */
+    #modalImg {
+      transform-origin: center center;
+      transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+      will-change: transform;
+    }
   </style>
 </head>
 <body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-[#00f0ff] selection:text-black relative overflow-x-hidden min-h-screen" oncontextmenu="return false;">
@@ -81,7 +88,7 @@
   <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/85 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="text-base font-mono font-bold tracking-tight text-white flex items-center gap-2">
-        <span class="text-[#00f0ff]">&lt;RRS/&gt;Rahul .R. Shettigar
+        <span class="text-[#00f0ff]">&lt;RRS/&gt;</span> Rahul R. Shettigar
       </a>
       <nav class="hidden md:flex items-center space-x-7 text-xs font-mono tracking-wider uppercase text-slate-400">
         <a href="#about" class="hover:text-[#00f0ff] transition-colors">About</a>
@@ -89,7 +96,7 @@
         <a href="#experience" class="hover:text-[#00f0ff] transition-colors">Experience</a>
         <a href="#projects" class="hover:text-[#00f0ff] transition-colors">Projects</a>
         <a href="#education" class="hover:text-[#00f0ff] transition-colors">Education</a>
-        <a href="#certifications" class="hover:text-[#00f0ff] transition-colors">ertification</a>
+        <a href="#certifications" class="hover:text-[#00f0ff] transition-colors">Certification</a>
       </nav>
       <div class="flex items-center gap-3">
         <a href="mailto:rahulrshettigar5@gmail.com" class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/30 hover:bg-[#00f0ff]/20 transition-all flex items-center gap-1.5 shadow-[0_0_12px_rgba(0,240,255,0.2)]">
@@ -103,7 +110,7 @@
   <section class="relative pt-20 pb-16 px-6 max-w-7xl mx-auto">
     <div class="space-y-6 max-w-5xl">
       <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs font-mono text-[#00f0ff]">
-        <span class="w-2 h-2 rounded-full bg-[#00f0ff] animate-ping"></span> ECE Fresher | Embedded Systems & IoT
+        <span class="w-2 h-2 rounded-full bg-[#00f0ff] animate-ping"></span> ECE Fresher | Embedded Systems, IoT, Robotics, Industrial Automation, Semiconductors
       </div>
       
       <!-- Unified Single-Line Pro Engineering Title -->
@@ -444,7 +451,7 @@
           <div class="h-px bg-slate-800 w-24"></div>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Interactive 3D Credential Showcase</h2>
-        <p class="text-slate-400 text-xs font-mono mt-1">Rotates every 3 seconds. Hover over the cards to pause, or click any card to inspect full details.</p>
+        <p class="text-slate-400 text-xs font-mono mt-1">Rotates every 3 seconds. Hover over the cards to pause, or click any card to inspect and zoom full details.</p>
       </div>
 
       <!-- 3D Carousel Top Controls -->
@@ -759,22 +766,22 @@
         </div>
       </div>
 
-      <!-- CARD 16: 3rd Place Taluk Level Kabaddi -->
-      <div data-index="15" onclick="cardClicked(15, 'https://lh3.googleusercontent.com/d/1fgbpHncWgcPDUVltmTOvYd9KkQckm0gV', 'Taluk Level Kabaddi (3rd Place)', 'Secured 3rd Place in Taluk-level Kabaddi competition representing St. Francis School at Shirva (Aug 2016).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-[#00f0ff]/50 bg-[#0b1329] shadow-2xl cursor-pointer">
+      <!-- CARD 16: 1st Place Taluk Level Kabaddi -->
+      <div data-index="15" onclick="cardClicked(15, 'https://lh3.googleusercontent.com/d/1sJB7fO7P-KwbLN9ueF359eyS2grr3OzA', 'Taluk Level Kabaddi (1st Place)', 'Secured 1st Place in Taluk-level Kabaddi tournament representing St. Francis School at Padubidri (Aug 2016).')" class="carousel-3d-item absolute w-[310px] sm:w-[460px] glass-card p-5 rounded-2xl flex flex-col justify-between border-emerald-500/40 bg-[#0b1329] shadow-2xl cursor-pointer">
         <div class="space-y-3">
-          <div class="relative overflow-hidden rounded-xl border border-[#00f0ff]/20 bg-slate-950">
-            <img src="https://lh3.googleusercontent.com/d/1fgbpHncWgcPDUVltmTOvYd9KkQckm0gV" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Taluk Level Kabaddi 3rd Place Certificate" loading="lazy" ondragstart="return false;">
-            <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-[#00f0ff] border border-[#00f0ff]/30">HONORS</div>
+          <div class="relative overflow-hidden rounded-xl border border-emerald-500/20 bg-slate-950">
+            <img src="https://lh3.googleusercontent.com/d/1sJB7fO7P-KwbLN9ueF359eyS2grr3OzA" class="h-44 sm:h-56 w-full object-cover protected-img transition-transform duration-500 hover:scale-105" alt="Taluk Level Kabaddi 1st Place Certificate" loading="lazy" ondragstart="return false;">
+            <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-emerald-400 border border-emerald-400/30">1ST PLACE</div>
           </div>
           <div>
-            <span class="text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider">Cert 16 // Athletic Honor</span>
-            <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Taluk Level Kabaddi (3rd Place)</h4>
-            <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 3rd Place in Taluk-level Kabaddi competition representing St. Francis School at Shirva (Aug 2016).</p>
+            <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Cert 16 // Athletic Honor</span>
+            <h4 class="text-base sm:text-lg font-bold text-white mt-0.5">Taluk Level Kabaddi (1st Place)</h4>
+            <p class="text-xs text-slate-300 mt-1 line-clamp-2">Secured 1st Place in Taluk-level Kabaddi competition representing St. Francis School at Padubidri (Aug 2016).</p>
           </div>
         </div>
-        <div class="pt-3 mt-3 border-t border-[#00f0ff]/20 flex items-center justify-between text-xs font-mono">
+        <div class="pt-3 mt-3 border-t border-emerald-500/20 flex items-center justify-between text-xs font-mono">
           <span class="text-slate-300">Udupi Taluk</span>
-          <span class="text-[#00f0ff] font-semibold flex items-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Inspect</span>
+          <span class="text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i> Inspect</span>
         </div>
       </div>
 
@@ -786,39 +793,61 @@
     </div>
   </section>
 
-  <!-- PROTECTED CERTIFICATE LIGHTBOX MODAL -->
+  <!-- PROTECTED CERTIFICATE LIGHTBOX MODAL (WITH INTERACTIVE ZOOM & DRAG PAN) -->
   <div id="certModal" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-all duration-300">
-    <div class="relative w-full max-w-4xl max-h-[90vh] glass-card p-4 sm:p-6 rounded-2xl flex flex-col items-center border-[#00f0ff]/30 shadow-[0_0_40px_rgba(0,240,255,0.2)]">
+    <div class="relative w-full max-w-5xl max-h-[92vh] glass-card p-4 sm:p-6 rounded-2xl flex flex-col items-center border-[#00f0ff]/30 shadow-[0_0_40px_rgba(0,240,255,0.2)]">
       
-      <!-- Top Bar with Close & Request Option -->
-      <div class="w-full flex items-center justify-between pb-3 border-b border-white/10 gap-3">
-        <div class="flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <!-- Top Bar with Zoom Controls, Request Copy & Close -->
+      <div class="w-full flex flex-wrap items-center justify-between pb-3 border-b border-white/10 gap-3">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></span>
           <span id="modalTitle" class="text-sm sm:text-base font-bold text-white font-mono truncate">Certificate View</span>
         </div>
+
+        <!-- Zoom Toolbar & Action Controls -->
         <div class="flex items-center gap-2">
-          <a id="requestMailBtn" href="mailto:rahulrshettigar5@gmail.com" class="px-3 py-1 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/30 text-xs font-mono hover:bg-[#00f0ff]/20 transition-all flex items-center gap-1">
-            <i data-lucide="send" class="w-3 h-3"></i> Request Copy
+          <!-- Zoom Controls -->
+          <div class="flex items-center bg-slate-900/90 border border-white/15 rounded-lg p-0.5">
+            <button onclick="zoomOut()" class="p-1.5 hover:bg-white/10 text-slate-300 hover:text-white rounded transition" title="Zoom Out (-)">
+              <i data-lucide="zoom-out" class="w-4 h-4"></i>
+            </button>
+            <span id="zoomLevelDisplay" class="px-2 text-xs font-mono text-[#00f0ff] select-none min-w-[50px] text-center">100%</span>
+            <button onclick="zoomIn()" class="p-1.5 hover:bg-white/10 text-slate-300 hover:text-white rounded transition" title="Zoom In (+)">
+              <i data-lucide="zoom-in" class="w-4 h-4"></i>
+            </button>
+            <button onclick="resetZoom()" class="p-1.5 hover:bg-white/10 text-slate-300 hover:text-white rounded transition border-l border-white/10" title="Reset Zoom">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Request Official Verification Copy -->
+          <a id="requestMailBtn" href="mailto:rahulrshettigar5@gmail.com" class="px-3 py-1.5 rounded-lg bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/30 text-xs font-mono hover:bg-[#00f0ff]/20 transition-all flex items-center gap-1.5">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i> Request Copy
           </a>
-          <button onclick="closeModal()" class="p-1.5 rounded-md hover:bg-white/10 text-slate-400 hover:text-white transition-all">
+
+          <!-- Close Modal -->
+          <button onclick="closeModal()" class="p-1.5 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition-all">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
       </div>
 
-      <!-- Protected Image Canvas Container (Anti-Screenshot/Right-Click Shield) -->
-      <div class="relative my-4 w-full flex-1 flex items-center justify-center overflow-hidden max-h-[62vh] rounded-lg bg-black/40 border border-white/5 select-none">
-        <img id="modalImg" src="" class="max-h-[60vh] max-w-full object-contain rounded-md protected-img shadow-2xl" alt="Verified Certificate Inspection View" ondragstart="return false;">
-        <!-- Invisible Overlay Shield to Prevent Direct Right-Click Context Menu on Image -->
-        <div class="absolute inset-0 bg-transparent cursor-default" oncontextmenu="return false;"></div>
+      <!-- Zoomable & Pannable Image Canvas Container -->
+      <div id="imageCanvas" class="relative my-4 w-full flex-1 flex items-center justify-center overflow-hidden h-[58vh] sm:h-[62vh] rounded-xl bg-black/50 border border-white/5 select-none cursor-grab active:cursor-grabbing">
+        <img id="modalImg" src="" class="max-h-[58vh] max-w-full object-contain rounded-md protected-img shadow-2xl" alt="Verified Certificate Inspection View" ondragstart="return false;">
+        <!-- Invisible Overlay Shield to Block Browser Right-Click Context Menu -->
+        <div class="absolute inset-0 bg-transparent" oncontextmenu="return false;"></div>
       </div>
 
-      <!-- Verification Footer Details -->
+      <!-- Verification Footer Details & Interactive Guide -->
       <div class="w-full pt-2 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-mono text-slate-400 border-t border-white/5">
         <span id="modalDesc" class="text-slate-300 text-center sm:text-left text-xs">Verified Engineering Credential</span>
-        <span class="text-emerald-400 font-semibold text-[11px] flex items-center gap-1">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Read-Only Verified
-        </span>
+        <div class="flex items-center gap-3">
+          <span class="text-[11px] text-slate-400 hidden sm:inline-block">💡 Use mouse wheel or double-click to zoom & drag to pan</span>
+          <span class="text-emerald-400 font-semibold text-[11px] flex items-center gap-1">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Read-Only Verified
+          </span>
+        </div>
       </div>
 
     </div>
@@ -847,7 +876,7 @@
     </div>
   </footer>
 
-  <!-- 3D Coverflow Script with 3-Second Auto Loop & Modal Controls -->
+  <!-- 3D Coverflow Script with 3-Second Auto Loop & Zoomable Modal Engine -->
   <script>
     // Initialize Lucide Icons
     lucide.createIcons();
@@ -955,7 +984,6 @@
     function startAutoPlay() {
       if (!autoPlayInterval) {
         autoPlayInterval = setInterval(() => {
-          // Only auto-advance if the modal is not open
           if (!document.getElementById('certModal').classList.contains('opacity-100')) {
             nextSlide();
           }
@@ -1000,7 +1028,7 @@
       restartAutoPlay();
     });
 
-    // Keyboard Arrow Navigation
+    // Keyboard Arrow Navigation for Carousel
     document.addEventListener('keydown', (e) => {
       if (document.getElementById('certModal').classList.contains('opacity-100')) return;
       if (e.key === 'ArrowRight') {
@@ -1013,7 +1041,7 @@
       }
     });
 
-    // Touch Swipe Navigation for Mobile
+    // Touch Swipe Navigation for Carousel
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -1029,22 +1057,141 @@
       startAutoPlay();
     }, { passive: true });
 
-    // Re-calculate on window resize
     window.addEventListener('resize', update3DCarousel);
-
-    // Initial 3D Positioning Render & Start 3-Second Loop
     update3DCarousel();
     startAutoPlay();
 
-    // ================= PROTECTED MODAL CONTROLS =================
+    // ================= INTERACTIVE ZOOM & PAN MODAL ENGINE =================
+    let currentZoom = 1;
+    let panX = 0;
+    let panY = 0;
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const requestMailBtn = document.getElementById('requestMailBtn');
+    const imageCanvas = document.getElementById('imageCanvas');
+    const zoomLevelDisplay = document.getElementById('zoomLevelDisplay');
+
+    function applyTransform() {
+      modalImg.style.transform = `translate(${panX}px, ${panY}px) scale(${currentZoom})`;
+      zoomLevelDisplay.innerText = `${Math.round(currentZoom * 100)}%`;
+    }
+
+    function zoomIn() {
+      if (currentZoom < 3.5) {
+        currentZoom = Math.min(3.5, currentZoom + 0.25);
+        applyTransform();
+      }
+    }
+
+    function zoomOut() {
+      if (currentZoom > 0.75) {
+        currentZoom = Math.max(0.75, currentZoom - 0.25);
+        if (currentZoom === 1) {
+          panX = 0;
+          panY = 0;
+        }
+        applyTransform();
+      }
+    }
+
+    function resetZoom() {
+      currentZoom = 1;
+      panX = 0;
+      panY = 0;
+      applyTransform();
+    }
+
+    // Mouse Wheel Zoom
+    imageCanvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (e.deltaY < 0) {
+        zoomIn();
+      } else {
+        zoomOut();
+      }
+    }, { passive: false });
+
+    // Double-Click to Zoom In / Reset
+    imageCanvas.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      if (currentZoom > 1.2) {
+        resetZoom();
+      } else {
+        currentZoom = 2;
+        applyTransform();
+      }
+    });
+
+    // Pan / Dragging Logic
+    imageCanvas.addEventListener('mousedown', (e) => {
+      if (currentZoom > 1) {
+        isPanning = true;
+        startX = e.clientX - panX;
+        startY = e.clientY - panY;
+      }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (isPanning) {
+        panX = e.clientX - startX;
+        panY = e.clientY - startY;
+        applyTransform();
+      }
+    });
+
+    window.addEventListener('mouseup', () => {
+      isPanning = false;
+    });
+
+    // Touch Pinch & Pan for Mobile inside Modal
+    let initialDistance = null;
+    imageCanvas.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1 && currentZoom > 1) {
+        isPanning = true;
+        startX = e.touches[0].clientX - panX;
+        startY = e.touches[0].clientY - panY;
+      } else if (e.touches.length === 2) {
+        isPanning = false;
+        initialDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+      }
+    }, { passive: true });
+
+    imageCanvas.addEventListener('touchmove', (e) => {
+      if (isPanning && e.touches.length === 1) {
+        panX = e.touches[0].clientX - startX;
+        panY = e.touches[0].clientY - startY;
+        applyTransform();
+      } else if (e.touches.length === 2 && initialDistance) {
+        const currentDistance = Math.hypot(
+          e.touches[0].clientX - e.touches[1].clientX,
+          e.touches[0].clientY - e.touches[1].clientY
+        );
+        const diff = currentDistance - initialDistance;
+        if (Math.abs(diff) > 5) {
+          if (diff > 0) zoomIn();
+          else zoomOut();
+          initialDistance = currentDistance;
+        }
+      }
+    }, { passive: true });
+
+    imageCanvas.addEventListener('touchend', () => {
+      isPanning = false;
+      initialDistance = null;
+    }, { passive: true });
+
     function openModal(imgSrc, title, desc) {
       stopAutoPlay();
-      const modal = document.getElementById('certModal');
-      const modalImg = document.getElementById('modalImg');
-      const modalTitle = document.getElementById('modalTitle');
-      const modalDesc = document.getElementById('modalDesc');
-      const requestMailBtn = document.getElementById('requestMailBtn');
-
+      resetZoom();
       modalImg.src = imgSrc;
       modalTitle.innerText = title;
       modalDesc.innerText = desc;
@@ -1056,22 +1203,22 @@
     }
 
     function closeModal() {
-      const modal = document.getElementById('certModal');
       modal.classList.remove('opacity-100', 'pointer-events-auto');
       modal.classList.add('opacity-0', 'pointer-events-none');
       document.body.style.overflow = 'auto';
+      resetZoom();
       startAutoPlay();
     }
 
-    // Close on Escape Key Press
+    // Close Modal on Escape
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         closeModal();
       }
     });
 
-    // Close on clicking backdrop outside modal card
-    document.getElementById('certModal').addEventListener('click', function(e) {
+    // Close Modal on Backdrop Click
+    modal.addEventListener('click', function(e) {
       if (e.target === this) {
         closeModal();
       }
